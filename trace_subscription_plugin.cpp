@@ -2,11 +2,8 @@
 #include <eosio/chain_plugin/chain_plugin.hpp>
 #include <eosio/tcp_plugin/tcp_plugin.hpp>
 #include <eosio/chain/plugin_interface.hpp>
-#include <eosio/chain/block.hpp>
 #include <boost/signals2/connection.hpp>
 #include <fc/io/json.hpp>
-
-#define CHUNK_SIZE 500
 
 namespace eosio {
 	static appbase::abstract_plugin& _trace_subscription_plugin = app().register_plugin<trace_subscription_plugin>();
